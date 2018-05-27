@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/coolshop-base/coolshop-base.iml" filepath="$PROJECT_DIR$/coolshop-base/coolshop-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coolshop-common.iml" filepath="$PROJECT_DIR$/coolshop-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coolshop-commons.iml" filepath="$PROJECT_DIR$/coolshop-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/coolshop-parent.iml" filepath="$PROJECT_DIR$/coolshop-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter.iml" filepath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-api/coolshop-ucenter-api.iml" filepath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-api/coolshop-ucenter-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/coolshop-ucenter-dao.iml" filepath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/coolshop-ucenter-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/coolshop-ucenter-service.iml" filepath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/coolshop-ucenter-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coolshopcommon.iml" filepath="$PROJECT_DIR$/coolshopcommon.iml" />
     </modules>
   </component>
 </project>
