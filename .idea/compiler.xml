@@ -2,19 +2,44 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="coolshop-base" />
+        <module name="coolshop-catalog-api" />
+        <module name="coolshop-catalog-service" />
+        <module name="coolshop-order-api" />
+        <module name="coolshop-order-service" />
+        <module name="coolshop-payment" />
+        <module name="coolshop-promotion-api" />
+        <module name="coolshop-promotion-service" />
+        <module name="coolshop-search" />
         <module name="coolshop-ucenter-api" />
+        <module name="coolshop-ucenter-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="coolshop-base" target="1.8" />
+      <module name="coolshop-catalog" target="1.8" />
+      <module name="coolshop-catalog-api" target="1.8" />
+      <module name="coolshop-catalog-service" target="1.8" />
+      <module name="coolshop-order" target="1.8" />
+      <module name="coolshop-order-api" target="1.8" />
+      <module name="coolshop-order-service" target="1.8" />
       <module name="coolshop-parent" target="1.8" />
+      <module name="coolshop-payment" target="1.8" />
+      <module name="coolshop-promotion" target="1.8" />
+      <module name="coolshop-promotion-api" target="1.8" />
+      <module name="coolshop-promotion-service" target="1.8" />
+      <module name="coolshop-search" target="1.8" />
+      <module name="coolshop-support" target="1.8" />
+      <module name="coolshop-support-mybatis" target="1.8" />
       <module name="coolshop-ucenter" target="1.8" />
       <module name="coolshop-ucenter-api" target="1.8" />
+      <module name="coolshop-ucenter-dao" target="1.8" />
+      <module name="coolshop-ucenter-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

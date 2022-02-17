@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.coolshop.promotion.dao.ActivityDao">
+	<resultMap id="activityMap" type="Activity">
+		<id property="id" column="activity_id" javaType="long" jdbcType="BIGINT"/>
+		<result property="name" column="activity_name" />
+		<result property="desc" column="activity_desc" />
+		<result property="priority" column="activity_priority" />
+		<result property="creator" column="activity_creator" typeHandler="com.coolshop.promotion.handler.PromotionCreatorTypeHandler" />
+		<result property="platform" column="activity_platform" typeHandler="com.coolshop.promotion.handler.PromotionPlatformTypeHandler" />
+		<result property="channel" column="activity_channel" typeHandler="com.coolshop.promotion.handler.PromotionChannelTypeHandler" />
+		<result property="userScopeType" column="user_scope" typeHandler="com.coolshop.promotion.handler.UserScopeTypeHandler" />
+		<result property="type" column="activity_type" typeHandler="com.coolshop.promotion.handler.ActivityTypeHandler" />
+		<result property="status" column="activity_status" typeHandler="com.coolshop.promotion.handler.ActivityStatusTypeHandler" />
+		<result property="area" column="activity_area" />
+		<result property="limitedQuantity" column="limited_quantity" />
+		<result property="limitedStock" column="limited_stock" />
+		<result property="tag" column="activity_tag" />
+		<result property="promotionLink" column="promotion_link" />
+		<result property="startTime" column="start_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<result property="endTime" column="end_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<association property="rule" column="rule_id" select="com.coolshop.promotion.dao.RuleDao.find" />
+	</resultMap>
+
+	<!-- 根据activity id查询activity信息 -->
+	<select id="selectOne" parameterType="long" resultMap="activityMap">
+		SELECT * FROM coolshop_activity WHERE `activity_id` = #{id}
+	</select>
+
+	<!-- 查询所有activity -->
+	<select id="selectAll" resultMap="activityMap">
+		SELECT * FROM coolshop_activity
+	</select>
+
+	<!-- 统计所有activity数量 -->
+	<select id="count" resultType="long">
+		SELECT COUNT(1) FROM coolshop_activity
+	</select>
+
+	<!-- 根据 shop id查询activity信息
+	<select id="findActivitiesByShopId" parameterType="long" resultMap="activityMap">
+		SELECT * FROM
+			(SELECT * FROM coolshop_brand b WHERE b.`brand_id` = #{id}) brand
+		LEFT JOIN  coolshop_cat_brand cb
+		ON brand.brand_id = cb.brand_id
+		LEFT JOIN coolshop_cat c
+		ON c.cat_id = cb.cat_id
+	</select>-->
+
+	<!-- 查找某一个sku所参与的所有活动 -->
+	<select id="findActivitiesBySkuId" resultMap="activityMap" parameterType="long">
+		SELECT * FROM coolshop_activity ca
+		WHERE ca.`activity_id`
+		IN (SELECT activity_id FROM coolshop_activity_sku cas WHERE cas.sku_id = #{skuId})
+	</select>
+
+
+	<!-- 查找某一个店铺所创建的有活动 -->
+	<select id="findActivitiesByShopId" resultMap="activityMap" parameterType="long">
+		SELECT * FROM coolshop_activity ca
+		WHERE ca.`activity_id`
+		IN (SELECT activity_id FROM coolshop_activity_shop cas WHERE cas.shop_id = #{shopId})
+	</select>
+
+	<!-- 保存activity信息 -->
+	<insert id="save" parameterType="Activity">
+		INSERT INTO
+			coolshop_activity(
+				`activity_id`,`activity_name`,`activity_desc`,`activity_priority`,`activity_creator`,`activity_platform`,
+				`activity_channel`,`user_scope`,`activity_type`,`activity_status`,`activity_area`,`limited_quantity`,
+				`limited_stock`,`activity_tag`,`promotion_link`,`start_time`,`end_time`,`create_time`,`rule_id`
+			)
+		VALUES
+			(
+				#{id},#{name},#{desc},#{priority},
+				#{creator,typeHandler=com.coolshop.promotion.handler.PromotionCreatorTypeHandler},
+				#{platform,typeHandler=com.coolshop.promotion.handler.PromotionPlatformTypeHandler},
+				#{channel,typeHandler=com.coolshop.promotion.handler.PromotionChannelTypeHandler},
+				#{userScopeType,typeHandler=com.coolshop.promotion.handler.UserScopeTypeHandler},
+				#{type,typeHandler=com.coolshop.promotion.handler.ActivityTypeHandler},
+				#{status,typeHandler=com.coolshop.promotion.handler.ActivityStatusTypeHandler},
+				#{area},#{limitedQuantity},#{limitedStock},#{tag},#{promotionLink}
+				,#{startTime},#{endTime},#{createTime},#{rule.id}
+			)
+	</insert>
+
+	<!-- 批量保存activity信息 -->
+	<insert id="saveBatch" parameterType="java.util.ArrayList">
+		INSERT INTO
+			coolshop_activity(
+				`activity_id`,`activity_name`,`activity_desc`,`activity_priority`,`activity_creator`,`activity_platform`,
+				`activity_channel`,`user_scope`,`activity_type`,`activity_status`,`activity_area`,`limited_quantity`,
+				`limited_stock`,`activity_tag`,`promotion_link`,`start_time`,`end_time`,`create_time`,`rule_id`
+			)
+		VALUES
+			<foreach collection="list" item="element" separator=",">
+				(
+					#{element.id},#{element.name},#{element.desc},#{element.priority},
+					#{element.creator,typeHandler=com.coolshop.promotion.handler.PromotionCreatorTypeHandler},
+					#{element.platform,typeHandler=com.coolshop.promotion.handler.PromotionPlatformTypeHandler},
+					#{element.channel,typeHandler=com.coolshop.promotion.handler.PromotionChannelTypeHandler},
+					#{element.userScopeType,typeHandler=com.coolshop.promotion.handler.UserScopeTypeHandler},
+					#{element.type,typeHandler=com.coolshop.promotion.handler.ActivityTypeHandler},
+					#{element.status,typeHandler=com.coolshop.promotion.handler.ActivityStatusTypeHandler},
+					#{element.area},#{element.limitedQuantity},
+					#{element.limitedStock},#{element.tag},#{element.promotionLink},#{element.startTime},#{element.endTime},#{element.createTime}
+					<if test="element.rule != null">,#{element.rule.id}</if>
+				)
+			</foreach>
+	</insert>
+
+	<!-- 保存activity和sku的关系 -->
+	<insert id="saveActivityAndSku" parameterType="java.util.Map">
+		INSERT INTO
+			coolshop_activity_sku(`activity_id`,`sku_id`,`create_time`)
+		VALUES
+			(#{activityId},#{skuId},#{createTime})
+	</insert>
+
+	<!-- 保存activity和shop的关系 -->
+	<insert id="saveActivityAndShop" parameterType="java.util.Map">
+		INSERT INTO
+			coolshop_activity_shop(`activity_id`,`shop_id`,`create_time`)
+		VALUES
+		(#{activityId},#{shopId},#{createTime})
+	</insert>
+
+	<!-- 更新activity信息 -->
+	<update id="updateBatchById" parameterType="Activity">
+		<foreach collection="list" item="element" separator=",">
+			UPDATE coolshop_activity
+			<set>
+				<if test="element.id != null">`activity_id` = #{element.id},</if>
+				<if test="element.name != null">`activity_name` = #{element.name},</if>
+				<if test="element.desc != null">`activity_desc` = #{element.desc},</if>
+				<if test="element.priority != null">`activity_priority` = #{element.priority},</if>
+				<if test="element.creator != null">`activity_creator` = #{element.creator},</if>
+				<if test="element.platform != null">`activity_platform` = #{element.platform},</if>
+				<if test="element.channel != null">`activity_channel` = #{element.channel},</if>
+				<if test="element.userScopeType != null">`user_scope` = #{element.userScopeType},</if>
+				<if test="element.type != null">`activity_type` = #{element.type},</if>
+				<if test="element.status != null">`activity_status` = #{element.status},</if>
+				<if test="element.area != null">`activity_area` = #{element.area},</if>
+				<if test="element.limitedQuantity != null">`limited_quantity` = #{element.limitedQuantity},</if>
+				<if test="element.limitedStock != null">`limited_stock` = #{element.limitedStock},</if>
+				<if test="element.tag != null">`activity_tag` = #{element.tag},</if>
+				<if test="element.promotionLink != null">`promotion_link` = #{element.promotionLink},</if>
+				<if test="element.startTime != null">`start_time` = #{element.startTime},</if>
+				<if test="element.endTime != null">`end_time` = #{element.endTime},</if>
+				<if test="element.createTime != null">`create_time` = #{element.createTime},</if>
+				<if test="element.rule != null">`rule_id` = #{element.rule.id}</if>
+			</set>
+			WHERE `activity_id` = #{element.id}
+		</foreach>
+	</update>
+
+	<!-- 更新activity信息 -->
+	<update id="update" parameterType="Activity">
+		UPDATE coolshop_activity
+		<set>
+			<if test="id != null">`activity_id` = #{id},</if>
+			<if test="name != null">`activity_name` = #{name},</if>
+			<if test="desc != null">`activity_desc` = #{desc},</if>
+			<if test="priority != null">`activity_priority` = #{priority},</if>
+			<if test="creator != null">`activity_creator` = #{creator},</if>
+			<if test="platform != null">`activity_platform` = #{platform},</if>
+			<if test="channel != null">`activity_channel` = #{channel},</if>
+			<if test="userScopeType != null">`user_scope` = #{userScopeType},</if>
+			<if test="type != null">`activity_type` = #{type},</if>
+			<if test="status != null">`activity_status` = #{status},</if>
+			<if test="area != null">`activity_area` = #{area},</if>
+			<if test="limitedQuantity != null">`limited_quantity` = #{limitedQuantity},</if>
+			<if test="limitedStock != null">`limited_stock` = #{limitedStock},</if>
+			<if test="tag != null">`activity_tag` = #{tag},</if>
+			<if test="promotionLink != null">`promotion_link` = #{promotionLink},</if>
+			<if test="startTime != null">`start_time` = #{startTime},</if>
+			<if test="endTime != null">`end_time` = #{endTime},</if>
+			<if test="createTime != null">`create_time` = #{createTime},</if>
+			<if test="rule != null">`rule_id` = #{rule.id}</if>
+		</set>
+		WHERE `activity_id` = #{id}
+	</update>
+
+	<!-- 更新sku和activity之间的关系 -->
+	<update id="updateActivityAndSku" parameterType="java.util.Map">
+		UPDATE coolshop_activity_sku SET sku_id = #{skuId} WHERE activity_id = #{activityId}
+	</update>
+
+	<!-- 更新activity和shop之间的关系 -->
+	<update id="updateActivityAndShop" parameterType="java.util.Map">
+		UPDATE coolshop_activity_shop SET shop_id = #{shopId} WHERE activity_id = #{activityId}
+	</update>
+
+	<!-- 删除activity -->
+	<delete id="delete" parameterType="Activity">
+		DELETE FROM coolshop_activity WHERE `activity_id` = #{id}
+	</delete>
+
+	<!-- 删除activity -->
+	<delete id="deleteById" parameterType="long">
+		DELETE FROM coolshop_activity WHERE `activity_id` = #{id}
+	</delete>
+
+	<!-- 删除所有activity -->
+	<delete id="deleteAll">
+		DELETE FROM coolshop_activity
+	</delete>
+
+	<!--删除activity 和 brand 之间关系-->
+	<delete id="deleteActivityAndSku" parameterType="long">
+		DELETE FROM coolshop_activity_sku WHERE `activity_id` = #{id}
+	</delete>
+
+	<!--删除attribute name 和 activity 之间关系-->
+	<delete id="deleteActivityAndShop" parameterType="long">
+		DELETE FROM coolshop_activity_shop WHERE `activity_id` = #{id}
+	</delete>
+</mapper>

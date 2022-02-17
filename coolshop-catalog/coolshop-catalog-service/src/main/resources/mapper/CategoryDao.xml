@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.coolshop.catalog.dao.CategoryDao">
+	<resultMap id="categoryMap" type="CategoryModel">
+		<id property="id" column="cat_id" javaType="long" jdbcType="BIGINT"/>
+		<result property="name" column="cat_name" />
+		<result property="description" column="cat_desc" />
+		<result property="imagePath" column="image_path" />
+		<result property="displayOrder" column="display_order" />
+		<!--MyBatis3做数据持久层，在字段中有Date和DateTime类型，在插入数据时只要将实体的属性设置成Timestamp就会对应mysql的DateTime类型，Date会对应mysql的Date类型。-->
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<association property="parent" column="parent_id" select="find" />
+		<collection property="brandList" column="cat_id"
+					ofType="BrandModel" fetchType="lazy"
+					select="com.coolshop.catalog.dao.BrandDao.findBrandsByCategoryId">
+			<id property="id" column="brand_id" javaType="long" jdbcType="BIGINT"/>
+			<result property="chineseName" column="brand_chinese_name" />
+			<result property="englishName" column="brand_english_name" />
+			<result property="description" column="brand_desc" />
+			<result property="logo" column="brand_logo" />
+			<result property="origin" column="brand_origin" />
+			<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		</collection>
+		<collection property="productList" column="cat_id"
+					ofType="ProductModel" fetchType="lazy"
+					select="com.coolshop.catalog.dao.ProductDao.findProductsByCategoryId" />
+		<collection property="attributeNameList" ofType="AttributeNameModel"
+					column="cat_id" fetchType="lazy"
+					select="com.coolshop.catalog.dao.AttributeNameDao.findAttributeNamesByCategoryId" />
+	</resultMap>
+
+	<!--根据category id查询category信息 -->
+	<select id="find" parameterType="long" resultMap="categoryMap">
+		SELECT * FROM coolshop_cat WHERE `cat_id` = #{id}
+	</select>
+
+	<!--根据category name查询category信息 -->
+	<select id="findByName" resultMap="categoryMap">
+		SELECT * FROM coolshop_cat WHERE `cat_name` = #{name}
+	</select>
+
+	<!--查询所有category -->
+	<select id="findAll" resultMap="categoryMap">
+		SELECT * FROM coolshop_cat
+	</select>
+
+	<!--统计所有category数量 -->
+	<select id="count" resultType="long">
+		SELECT COUNT(1) FROM coolshop_cat
+	</select>
+
+	<!--根据brand id查询category信息 -->
+	<select id="findCategoriesByBrandId" parameterType="long" resultMap="categoryMap">
+		SELECT * FROM
+			(SELECT * FROM coolshop_brand b WHERE b.`brand_id` = #{id}) brand
+		LEFT JOIN  coolshop_cat_brand cb
+		ON brand.brand_id = cb.brand_id
+		LEFT JOIN coolshop_cat c
+		ON c.cat_id = cb.cat_id
+	</select>
+
+	<!--查找一个属性下的所有分类 -->
+	<select id="findCategoriesByAttributeNameId" resultMap="categoryMap" parameterType="long">
+		SELECT * FROM
+			(SELECT * FROM coolshop_attr_name an WHERE an.attr_name_id = #{id}) attr
+		LEFT JOIN coolshop_cat_attr_name can
+		ON attr.attr_name_id = can.attr_name_id
+		LEFT JOIN coolshop_cat c
+		ON can.cat_id = c.cat_id
+	</select>
+
+	<!-- 保存category信息 -->
+	<insert id="save" parameterType="CategoryModel">
+		INSERT INTO coolshop_cat
+		(
+			`cat_id`,`cat_name`,`cat_desc`,`image_path`,
+			`display_order`,`create_time`,`parent_id`
+		)
+		VALUES
+		(
+			#{id},#{name},#{description},#{imagePath},
+			#{displayOrder},#{createTime},#{parent.id}
+		)
+	</insert>
+
+	<!-- 批量保存category信息 -->
+	<insert id="saveList" parameterType="java.util.ArrayList">
+		INSERT INTO
+			coolshop_cat(`cat_id`,`cat_name`,`cat_desc`,`image_path`,`display_order`,`create_time`,`parent_id`)
+		VALUES
+			<foreach collection="list" item="element" separator=",">
+				(
+					#{element.id},
+					#{element.name},
+					#{element.description},
+					#{element.imagePath},
+					#{element.displayOrder},
+					#{element.createTime}
+					<if test="element.parent != null">,#{element.parent.id}</if>
+				)
+			</foreach>
+	</insert>
+
+	<!-- 保存category和brand的关系 -->
+	<insert id="saveCategoryAndBrand" parameterType="java.util.Map">
+		INSERT INTO
+			coolshop_cat_brand(`cat_id`,`brand_id`,`create_time`)
+		VALUES
+			(#{categoryId},#{brandId},#{createTime})
+	</insert>
+
+	<!-- 保存category和AttributeName的关系 -->
+	<insert id="saveCategoryAndAttributeName" parameterType="java.util.Map">
+		INSERT INTO
+		coolshop_cat_brand(`cat_id`,`attr_name_id`,`create_time`)
+		VALUES
+		(#{categoryId},#{attributeNameId},#{createTime})
+	</insert>
+
+	<!-- 更新category信息 -->
+	<update id="update" parameterType="CategoryModel">
+		UPDATE coolshop_cat
+		<set>
+			<if test="id != null">`cat_id` = #{id},</if>
+			<if test="name != null">`cat_name` = #{name},</if>
+			<if test="description != null">`cat_desc` = #{description},</if>
+			<if test="imagePath != null">`image_path` = #{imagePath},</if>
+			<if test="displayOrder != null">`display_order` = #{displayOrder},</if>
+			<if test="createTime != null">`create_time` = #{createTime},</if>
+			<if test="parent != null">`parent_id` = #{parent.id}</if>
+		</set>
+		WHERE `cat_id` = #{id}
+	</update>
+
+	<!-- 更新AttributeName和Category之间的关系 -->
+	<update id="updateCategoryAndAttributeName" parameterType="java.util.Map">
+		UPDATE coolshop_cat_attr_name SET attr_name_id = #{attributeNameId} WHERE cat_id = #{categoryId}
+	</update>
+
+	<!-- 更新category和brand之间的关系 -->
+	<update id="updateCategoryAndBrand" parameterType="java.util.Map">
+		UPDATE coolshop_cat_brand SET brand_id = #{brandId} WHERE cat_id = #{categoryId}
+	</update>
+
+	<!-- 删除category -->
+	<delete id="delete" parameterType="long">
+		DELETE FROM coolshop_cat WHERE `cat_id` = #{id}
+	</delete>
+
+	<!--删除category 和 brand 之间关系-->
+	<delete id="deleteCategoryAndBrand" parameterType="long">
+		DELETE FROM coolshop_cat_brand WHERE `cat_id` = #{id}
+	</delete>
+
+	<!--删除attribute name 和 category 之间关系-->
+	<delete id="deleteCategoryAttributeName" parameterType="long">
+		DELETE FROM coolshop_cat_attr_name WHERE `cat_id` = #{id}
+	</delete>
+</mapper>

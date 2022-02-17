@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.coolshop.catalog.dao.BrandDao">
+	<resultMap id="brandMap" type="BrandModel">
+		<id property="id" column="brand_id" javaType="long" jdbcType="BIGINT"/>
+		<result property="chineseName" column="brand_chinese_name" />
+		<result property="englishName" column="brand_english_name" />
+		<result property="description" column="brand_desc" />
+		<result property="logo" column="brand_logo" />
+		<result property="origin" column="brand_origin" />
+		<!--MyBatis3做数据持久层，在字段中有Date和DateTime类型，在插入数据时只要将实体的属性设置成Timestamp就会对应mysql的DateTime类型，Date会对应mysql的Date类型。-->
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<collection property="nicknames" ofType="string" jdbcType="array" javaType="list" column="nicknames" />
+		<collection property="categoryList" column="brand_id"
+					ofType="CategoryModel" fetchType="lazy"
+					select="com.coolshop.catalog.dao.CategoryDao.findCategoriesByBrandId" />
+	</resultMap>
+
+	<!--根据id 查询品牌信息-->
+	<select id="find" parameterType="long" resultMap="brandMap">
+		SELECT * FROM coolshop_brand WHERE `brand_id` = #{id}
+	</select>
+
+	<!-- 根据名字查询brand -->
+	<select id="findByName" resultMap="brandMap">
+		SELECT * FROM coolshop_brand WHERE `brand_chinese_name` = #{name} OR `brand_english_name` = #{name}
+	</select>
+
+	<!-- 查询所有brand -->
+	<select id="findAll" resultMap="brandMap">
+		SELECT * FROM coolshop_brand
+	</select>
+
+	<select id="count" resultType="long">
+		SELECT COUNT(1) FROM coolshop_brand
+	</select>
+
+	<!--根据category查找brand-->
+	<select id="findBrandsByCategoryId" parameterType="long" resultMap="brandMap">
+		SELECT * FROM
+			(SELECT * FROM coolshop_cat c WHERE c.cat_id = #{id}) cat
+		LEFT JOIN coolshop_cat_brand cb
+		ON cb.cat_id = cat.cat_id
+		LEFT JOIN coolshop_brand b
+		ON cb.brand_id = b.brand_id
+	</select>
+
+	<!-- 添加brand-->
+	<insert id="save" parameterType="BrandModel">
+		INSERT INTO
+			coolshop_brand(`brand_id`,`brand_chinese_name`,`brand_english_name`,`brand_desc`,`brand_logo`,`brand_origin`,`create_time`,`nicknames`)
+		VALUES
+			(#{id},#{chineseName},#{englishName},#{description},#{logo},#{origin},#{createTime},#{nicknames})
+	</insert>
+
+	<!-- 批量保存brand -->
+	<insert id="saveList" parameterType="java.util.ArrayList">
+		INSERT INTO
+			coolshop_brand(`brand_id`,`brand_chinese_name`,`brand_english_name`,`brand_desc`,`brand_logo`,`brand_origin`,`create_time`,`nicknames`)
+		VALUES
+			<foreach collection="list" item="element" separator=",">
+				(
+					#{element.id},
+					#{element.chineseName},
+					#{element.englishName},
+					#{element.description},
+					#{element.logo},
+					#{element.origin},
+					#{element.createTime},
+					#{element.nicknames}
+				)
+			</foreach>
+	</insert>
+
+	<!-- 保存brand和category之间的关系 -->
+	<insert id="saveBrandAndCategory" parameterType="java.util.Map">
+		INSERT INTO
+			coolshop_cat_brand(`cat_id`,`brand_id`,`create_time`)
+		VALUES
+			(#{categoryId},#{brandId},#{createTime})
+	</insert>
+
+	<!-- 更新brand -->
+	<update id="update" parameterType="BrandModel">
+		UPDATE coolshop_brand
+		<set>
+			<if test="id != null">`brand_id` = #{id},</if>
+			<if test="chineseName != null">`brand_chinese_name` = #{chineseName},</if>
+			<if test="englishName != null">`brand_english_name` = #{englishName},</if>
+			<if test="description != null">`brand_desc` = #{description},</if>
+			<if test="logo != null">`brand_logo` = #{logo},</if>
+			<if test="origin != null">`brand_origin` = #{origin},</if>
+			<if test="createTime != null">`create_time` = #{createTime}</if>,
+			<if test="nicknames != null">`nicknames`=#{nicknames}</if>
+
+		</set>
+		WHERE `brand_id` = #{id}
+	</update>
+
+	<!-- 更新brand和category关系 -->
+	<update id="updateBrandAndCategory" parameterType="java.util.Map">
+		UPDATE coolshop_cat_brand SET cat_id = #{categoryId} WHERE brand_id = #{brandId}
+	</update>
+
+	<!--删除品牌-->
+	<delete id="delete" parameterType="long">
+		DELETE FROM coolshop_brand WHERE `brand_id` = #{id}
+	</delete>
+
+	<!--删除品牌对应的分类关系-->
+	<delete id="deleteBrandAndCategory" parameterType="long">
+		DELETE FROM coolshop_cat_brand WHERE `brand_id` = #{id}
+	</delete>
+</mapper>

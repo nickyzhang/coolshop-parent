@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.coolshop.promotion.dao.RuleDao">
+	<resultMap id="ruleMap" type="Rule">
+		<id property="id" column="rule_id" javaType="long" jdbcType="BIGINT"/>
+		<result property="name" column="rule_name" />
+		<result property="ladderSpendMoney" column="ladder_spend_money" />
+		<result property="perSpendMoney" column="per_spend_money" />
+		<result property="quantity" column="quantity" />
+		<result property="moneyOff" column="money_off" />
+		<result property="discountOff" column="discount_off" />
+		<result property="freeShip" column="free_ship" javaType="boolean" jdbcType="TINYINT" />
+		<result property="presentGift" column="present_gift" javaType="boolean" jdbcType="TINYINT" />
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+	</resultMap>
+
+	<!--根据rule id查询rule信息 -->
+	<select id="selectOne" parameterType="long" resultMap="ruleMap">
+		SELECT * FROM coolshop_rule WHERE `rule_id` = #{id}
+	</select>
+
+	<!--查询所有rules -->
+	<select id="selectAll" resultMap="ruleMap">
+		SELECT * FROM coolshop_rule
+	</select>
+
+	<!--统计所有rule数量 -->
+	<select id="count" resultType="long">
+		SELECT COUNT(1) FROM coolshop_rule
+	</select>
+
+
+	<!-- 保存rule信息 -->
+	<insert id="save" parameterType="Rule">
+		INSERT INTO
+			coolshop_rule(
+				`rule_id`,`rule_name`,`ladder_spend_money`,`per_spend_money`,`quantity`,
+				`money_off`,`discount_off`,`free_ship`,`present_gift`,`create_time`
+			)
+		VALUES
+			(
+				#{id},#{name},#{ladderSpendMoney},#{perSpendMoney},#{quantity},
+				#{moneyOff},#{discountOff},#{freeShip},#{presentGift},#{createTime}
+			)
+	</insert>
+
+	<!-- 批量保存category信息 -->
+	<insert id="saveBatch" parameterType="java.util.ArrayList">
+		INSERT INTO coolshop_rule
+			(
+				`rule_id`,`rule_name`,`ladder_spend_money`,`per_spend_money`,`quantity`,
+				`money_off`,`discount_off`,`free_ship`,`present_gift`,`create_time`
+			)
+		VALUES
+			<foreach collection="list" item="element" separator=",">
+				(
+					#{element.id},
+					#{element.name},
+					#{element.ladderSpendMoney},
+					#{element.perSpendMoney},
+					#{element.quantity},
+					#{element.moneyOff},
+					#{element.discountOff},
+					#{element.freeShip},
+					#{element.presentGift},
+					#{element.createTime}
+				)
+			</foreach>
+	</insert>
+
+	<!-- 更新rule信息 -->
+	<update id="update" parameterType="Rule">
+		UPDATE coolshop_rule
+		<set>
+			<if test="id != null">`rule_id` = #{id},</if>
+			<if test="name != null">`rule_name` = #{name},</if>
+			<if test="ladderSpendMoney != null">`ladder_spend_money` = #{ladderSpendMoney},</if>
+			<if test="perSpendMoney != null">`per_spend_money` = #{perSpendMoney},</if>
+			<if test="quantity != null">`quantity` = #{quantity},</if>
+			<if test="moneyOff != null">`money_off` = #{moneyOff},</if>
+			<if test="discountOff != null">`discount_off` = #{discountOff},</if>
+			<if test="freeShip != null">`free_ship` = #{freeShip},</if>
+			<if test="presentGift != null">`present_gift` = #{presentGift},</if>
+			<if test="createTime != null">`create_time` = #{createTime}</if>
+		</set>
+		WHERE `rule_id` = #{id}
+	</update>
+
+	<update id="updateBatchById" parameterType="Rule">
+		<foreach collection="list" item="element" separator=",">
+			UPDATE coolshop_rule
+			<set>
+				<if test="element.id != null">`rule_id` = #{element.id},</if>
+				<if test="element.name != null">`rule_name` = #{element.name},</if>
+				<if test="element.ladderSpendMoney != null">`ladder_spend_money` = #{element.ladderSpendMoney},</if>
+				<if test="element.perSpendMoney != null">`per_spend_money` = #{element.perSpendMoney},</if>
+				<if test="element.quantity != null">`quantity` = #{element.quantity},</if>
+				<if test="element.moneyOff != null">`money_off` = #{element.moneyOff},</if>
+				<if test="element.discountOff != null">`discount_off` = #{element.discountOff},</if>
+				<if test="element.freeShip != null">`free_ship` = #{element.freeShip},</if>
+				<if test="element.presentGift != null">`present_gift` = #{element.presentGift},</if>
+				<if test="element.createTime != null">`create_time` = #{element.createTime}</if>
+			</set>
+			WHERE `rule_id` = #{id}
+		</foreach>
+	</update>
+
+	<!-- 删除指定rule -->
+	<delete id="delete" parameterType="long">
+		DELETE FROM coolshop_rule WHERE `rule_id` = #{id}
+	</delete>
+
+	<!-- 删除所有rules -->
+	<delete id="deleteAll">
+		DELETE FROM coolshop_rule
+	</delete>
+</mapper>

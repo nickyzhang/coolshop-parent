@@ -3,11 +3,19 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../../code/coolshop-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/coolshop-support/coolshop-support-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/coolshop-support/pom.xml" />
+        <option value="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/../../code/coolshop-parent/out" />
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

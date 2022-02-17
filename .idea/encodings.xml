@@ -3,8 +3,20 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coolshop-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-catalog" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-order/coolshop-order-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-order/coolshop-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-payment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-promotion" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-search" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coolshop-ucenter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

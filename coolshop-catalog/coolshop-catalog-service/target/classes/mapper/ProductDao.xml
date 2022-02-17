@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.coolshop.catalog.dao.ProductDao">
+	<resultMap id="productMap" type="ProductModel">
+		<id property="id" column="product_id" javaType="long" jdbcType="BIGINT" />
+		<result property="name" column="product_name" />
+		<result property="description" column="product_desc" />
+		<result property="rating" column="product_rating" />
+		<result property="review" column="product_review" />
+		<result property="displayOrder" column="display_order" />
+		<result property="launchDate" column="launch_time" javaType="java.time.LocalDate" jdbcType="DATE" />
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<association property="brand" column="brand_id" select="com.coolshop.catalog.dao.BrandDao.find" />
+		<association property="category" column="cat_id" select="com.coolshop.catalog.dao.CategoryDao.find" />
+		<collection property="skuList" column="product_id" javaType="java.util.ArrayList"
+					select="com.coolshop.catalog.dao.SkuDao.findSkusByProductId"
+					ofType="SkuModel" fetchType="lazy">
+			<id property="id" column="sku_id" javaType="long" jdbcType="BIGINT"/>
+			<result property="name" column="sku_name" />
+			<result property="description" column="sku_desc" />
+			<result property="code" column="sku_code" />
+			<result property="barCode" column="bar_code" />
+			<result property="costPrice" column="cost_price" />
+			<result property="listPrice" column="market_price" />
+			<result property="salePoriginrice" column="sale_price" />
+			<result property="displayOrder" column="display_order" />
+			<result property="status" column="sku_status" />
+			<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		</collection>
+		<collection property="properties" ofType="AttributeValueModel" fetchType="lazy">
+			<id property="id" column="attr_val_id" javaType="long" jdbcType="BIGINT"/>
+			<result property="value" column="attr_val" />
+			<result property="displayOrder" column="display_order" />
+			<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+			<association property="name" column="attr_name_id" select="com.coolshop.catalog.dao.AttributeNameDao.find" />
+		</collection>
+	</resultMap>
+
+	<resultMap id="attributeValueMap" type="AttributeValueModel">
+		<id property="id" column="attr_val_id" javaType="long" jdbcType="BIGINT"/>
+		<result property="value" column="attr_val" />
+		<result property="displayOrder" column="display_order" />
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<association property="name" column="attr_name_id" select="com.coolshop.catalog.dao.AttributeNameDao.find" />
+	</resultMap>
+
+	<!--根据id查询product信息-->
+	<select id="find" parameterType="long" resultMap="productMap">
+		SELECT * FROM coolshop_product WHERE `product_id` = #{id}
+	</select>
+
+
+	<!--查询所有产品-->
+	<select id="findAll" resultMap="productMap">
+		SELECT * FROM coolshop_product
+	</select>
+
+	<!--统计表里所有product的数量-->
+	<select id="count" resultType="long">
+		SELECT COUNT(1) FROM coolshop_product
+	</select>
+
+
+	<!--根据category id查询product信息-->
+	<select id="findProductsByCategoryId" parameterType="long" resultMap="productMap">
+		SELECT * FROM coolshop_product WHERE `cat_id` = #{id}
+	</select>
+
+	<!--根据brand id查询product信息-->
+	<select id="findProductsByBrandId" parameterType="long" resultMap="productMap">
+		SELECT * FROM coolshop_product WHERE `brand_id` = #{id}
+	</select>
+
+	<select id="findPropertiesByProductId" parameterType="long" resultMap="attributeValueMap">
+		SELECT * FROM
+			(SELECT * FROM coolshop_product WHERE product_id = #{id}) p
+		LEFT JOIN coolshop_product_properties pp
+		ON p.product_id = pp.product_id
+		LEFT JOIN coolshop_attr_val av
+		ON pp.attr_val_id = av.attr_val_id
+	</select>
+
+	<!-- 添加product -->
+	<insert id="save" parameterType="ProductModel">
+		INSERT INTO coolshop_product
+		(
+			`product_id`,`product_name`,`product_desc`,`product_rating`,
+			`product_review`,`display_order`,`create_time`,`brand_id`,`cat_id`
+		)
+		VALUES
+		(
+			#{id},#{name},#{description},#{rating},#{review},
+			#{displayOrder},#{createTime},#{brand.id},#{category.id}
+		)
+	</insert>
+
+	<!-- 批量添加product -->
+	<insert id="saveList" parameterType="java.util.ArrayList">
+		INSERT INTO coolshop_product
+		(
+			`product_id`,`product_name`,`product_desc`,`product_rating`,`product_review`,
+			`display_order`,`launch_date`,`create_time`,`brand_id`,`cat_id`
+		)
+		VALUES
+		<foreach collection="list" item="element" separator=",">
+		(
+			#{element.id},
+			#{element.name},
+			#{element.description},
+			#{element.rating},
+			#{element.review},
+			#{element.displayOrder},
+			#{element.launchDate},
+			#{element.createTime},
+			#{element.brand.id},
+			#{element.category.id}
+		)
+		</foreach>
+	</insert>
+
+	<!-- 保存product和属性值之间的关系 -->
+	<insert id="saveProductAndAttributeValue" parameterType="java.util.Map">
+		INSERT INTO coolshop_product_properties VALUES (#{productId},#{attributeValueId},#{createTime})
+	</insert>
+
+	<!-- 更新product -->
+	<update id="update" parameterType="ProductModel">
+		UPDATE coolshop_product
+		<set>
+			<if test="id != null">`product_id` = #{id},</if>
+			<if test="name != null">`product_name` = #{name},</if>
+			<if test="description != null">`product_desc` = #{description},</if>
+			<if test="rating != null">`product_rating` = #{rating},</if>
+			<if test="review != null">`product_review` = #{review},</if>
+			<if test="displayOrder != null">`display_order` = #{displayOrder},</if>
+			<if test="launchDate != null">`launch_date` = #{launchDate},</if>
+			<if test="createTime != null">`create_time` = #{createTime},</if>
+			<if test="brand != null">`brand_id` = #{brand.id},</if>
+			<if test="category != null">`cat_id` = #{category.id}</if>
+		</set>
+		WHERE `product_id` = #{id}
+	</update>
+
+	<!-- 更新product和属性值之间的关系 -->
+	<update id="updateProductAndAttributeValue" parameterType="java.util.Map">
+		UPDATE coolshop_product_properties SET attr_val_id = #{attributeValueId} WHERE product_id = #{productId}
+	</update>
+
+	<!-- 删除product -->
+	<delete id="delete" parameterType="long">
+		DELETE FROM coolshop_product WHERE `product_id` = #{id}
+	</delete>
+
+	<!-- 删除product和属性值之间的关系 -->
+	<delete id="deleteProductAndAttributeValue" parameterType="long">
+		DELETE FROM coolshop_product_properties WHERE product_id = #{id}
+	</delete>
+</mapper>

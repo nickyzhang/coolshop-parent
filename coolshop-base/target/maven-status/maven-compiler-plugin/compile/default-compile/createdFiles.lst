@@ -1,0 +1,3 @@
+com\coolshop\base\dao\BaseDao.class
+com\coolshop\base\generator\config\IdGeneratorConfig.class
+com\coolshop\base\generator\IdGenerator.class

@@ -1,65 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="CUSTOM_SCOPE_NAME" value="Module 'coolshop-catalog-service'" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d213e66c-0547-4de2-b61a-b25c8218e9fb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_access_1_1_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_29.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_0_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_45.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_10_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/coolshop-base.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-api/coolshop-ucenter-api.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-api/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/coolshop-ucenter-dao.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/coolshop-ucenter-service.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_access_1_1_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_26.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_robert_vesta_vesta_intf_0_0_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_robert_vesta_vesta_service_0_0_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_43.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_16.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_16.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_typehandlers_jsr310_1_0_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_12.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_12.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_12.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_5_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/UserNameTools.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/api/ApiGatewayHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/api/ApiGatewayServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/api/ApiMapping.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/api/ApiRequest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/api/ApiStore.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/constant/APIConstants.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/dao/BaseDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/generator/IdGenerator.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/generator/config/IdGeneratorConfig.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/listener/ApplicationContextListener.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/mapper/BaseMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/service/BaseService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/service/impl/BaseServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/DateTools.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/JsonTools.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/security/EncryptTools.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/security/SaltTools.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/spring/SpringContextTools.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/main/resources/vesta-service.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-base/src/test/resources/vesta-service.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/coolshop-catalog-service.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/SpringCatalogApplication.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/AttributeNameDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/AttributeValueDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/BrandDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/BundleDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/CategoryDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/ProductDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/SkuDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/AttributeNameModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/AttributeValueModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/BrandModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/BundleModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/CategoryModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/ProductModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/SkuModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/AttributeNameService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/AttributeValueService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/BrandService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/BundleService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/CategoryService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/ProductService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/SkuService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/AttributeNameServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/AttributeValueServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/BrandServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/BundleServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/CategoryServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/ProductServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/SkuServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/application-dev.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/application-qa.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/application.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/logback.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/AttributeNameDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/AttributeValueDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/BrandDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/BundleDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/CategoryDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/ProductDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/SkuDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/AttributeNameServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/AttributeValueServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/BrandServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/BundleServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/CategoryServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/ClothesProductServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/ClothesSkuServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/PantsProductServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/PantsSkuServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-catalog/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-order/coolshop-order-api/coolshop-order-api.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-order/coolshop-order-api/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-order/coolshop-order-service/coolshop-order-service.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-order/coolshop-order-service/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-order/coolshop-order-service/src/main/java/com/coolshop/order/SpringOrderApplication.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-order/coolshop-order-service/src/main/java/com/coolshop/order/model/Order.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-order/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-payment/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-api/coolshop-promotion-api.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-api/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/coolshop-promotion-service.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/SpringPromotionApplication.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/config/Swagger2Configuration.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/dao/ActivityDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/dao/CouponDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/dao/RuleDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/enums/ActivityStatusType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/enums/ActivityType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/enums/CouponType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/enums/IssueMethodType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/enums/PromotionChannelType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/enums/PromotionCreatorType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/enums/PromotionPlatformType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/enums/UserScopeType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/handler/ActivityStatusTypeHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/handler/ActivityTypeHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/handler/CouponTypeHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/handler/IssueMethodTypeHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/handler/PromotionChannelTypeHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/handler/PromotionCreatorTypeHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/handler/PromotionPlatformTypeHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/handler/UserScopeTypeHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/model/Activity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/model/Coupon.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/model/Promotion.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/model/Rule.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/ActivityService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/CouponService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/RuleService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/impl/ActivityServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/impl/CouponServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/impl/RuleServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/application-dev.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/application-qa.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/application.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/logback.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/mapper/ActivityDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/mapper/CouponDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/mapper/RuleDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/test/java/com/coolshop/ActivityServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/test/java/com/coolshop/CouponServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/test/java/com/coolshop/RuleServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-promotion/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-search/coolshop-search.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-search/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/src/main/resources/mybatis-config.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/java/com/coolshop/ucenter/SpringUCenterApplication.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/java/com/coolshop/ucenter/conf/DruidConfiguration.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/java/com/coolshop/ucenter/dao/UserDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/java/com/coolshop/ucenter/model/UserModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/java/com/coolshop/ucenter/service/UserService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/java/com/coolshop/ucenter/service/impl/UserServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/resources/application-dev.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/resources/application-qa.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/resources/application.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/resources/logback.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/resources/mapper/UserDao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/test/java/com/coolshop/ucenter/service/test/UserServiceTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_3.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_3.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/coolshop-base/coolshop-base.iml" afterPath="$PROJECT_DIR$/coolshop-base/coolshop-base.iml" />
+      <change beforePath="$PROJECT_DIR$/coolshop-base/pom.xml" afterPath="$PROJECT_DIR$/coolshop-base/pom.xml" />
       <change beforePath="$PROJECT_DIR$/coolshop-parent.iml" afterPath="$PROJECT_DIR$/coolshop-parent.iml" />
+      <change beforePath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/coolshop-ucenter-dao.iml" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-api/coolshop-catalog-api.iml" />
+      <change beforePath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/pom.xml" afterPath="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/coolshop-ucenter-service.iml" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/coolshop-ucenter-service.iml" />
+      <change beforePath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/pom.xml" afterPath="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/coolshop-ucenter/pom.xml" afterPath="$PROJECT_DIR$/coolshop-ucenter/pom.xml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,6 +219,21 @@
     <ignored path="$PROJECT_DIR$/coolshop-base/target/" />
     <ignored path="$PROJECT_DIR$/coolshop-ucenter/target/" />
     <ignored path="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-api/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-catalog/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-api/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-payment/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-promotion/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-order/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-search/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-api/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-support/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-support/coolshop-support-mybatis/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-order/coolshop-order-api/target/" />
+    <ignored path="$PROJECT_DIR$/coolshop-order/coolshop-order-service/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,63 +241,120 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.20.0" />
+      </map>
+    </option>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="SaltTools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/security/SaltTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="534">
+              <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="31" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coolshop-base/pom.xml">
+      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="-516">
+              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coolshop-ucenter/pom.xml">
+      <file leaf-file-name="AttributeNameDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/AttributeNameDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="84">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-api/pom.xml">
+      <file leaf-file-name="AttributeValueDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/AttributeValueDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="105">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/pom.xml">
+      <file leaf-file-name="ProductDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/ProductDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/pom.xml">
+      <file leaf-file-name="EncryptTools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/security/EncryptTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="294">
+              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BCrypt.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/crypto/bcrypt/BCrypt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="647" column="36" lean-forward="false" selection-start-line="647" selection-start-column="36" selection-end-line="647" selection-end-column="36" />
+              <folding>
+                <element signature="e#27081#27082#0" expanded="true" />
+                <element signature="e#27134#27135#0" expanded="true" />
+                <element signature="e#27401#27402#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContextListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/listener/ApplicationContextListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -138,11 +362,86 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="AnnotationType" />
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>coolshop-common</find>
+      <find>销售属性</find>
+      <find>排水方式</find>
+      <find>washingCapacityVal</find>
+      <find>118161488832631811</find>
+      <find>code</find>
+      <find>findBrandsByCategoryId</find>
+      <find>SCRE</find>
+      <find>hiseneseCurve</find>
+      <find>context</find>
+      <find>PromotionPlatformType</find>
+      <find>ActivityTypeHandler</find>
+      <find>ActivityType</find>
+      <find>activityModel</find>
+      <find>activity</find>
+      <find>spring</find>
+      <find>RequestMappingHandlerAdapter</find>
+      <find>catalog</find>
+      <find>coupon_platform</find>
+      <find>coupon_channel</find>
+      <find>coupon_ch</find>
+      <find>UserScopeType</find>
+      <find>p1</find>
+      <find>MenT</find>
+      <find>jeansShellFabric</find>
+      <find>mysql.version</find>
+      <find>VES</find>
+      <find>List&lt;Str</find>
+      <find>map</find>
+      <find>BCRYPT_SALT_LEN</find>
+      <find>updateProductAndAttributeValue</find>
     </findStrings>
+    <replaceStrings>
+      <replace>energyEfficiencyLevelVal</replace>
+      <replace>washingCapacityVal</replace>
+      <replace>drainMethodVal</replace>
+      <replace>washerAttachmentVal</replace>
+      <replace>storevolumeVal</replace>
+      <replace>afterServiceVal</replace>
+      <replace>mobileStyleyVal</replace>
+      <replace>clothModelVal</replace>
+      <replace>seasonVal</replace>
+      <replace>hiseneseUltra</replace>
+      <replace>APIConstants</replace>
+      <replace>PromotionPlatformType</replace>
+      <replace>ActivityType</replace>
+      <replace>PromotionCreatorType</replace>
+      <replace>CouponType</replace>
+      <replace>IssueMethodType</replace>
+      <replace>ActivityStatusTypeHandler</replace>
+      <replace>ActivityStatusType</replace>
+      <replace>activity</replace>
+      <replace>couponMap</replace>
+      <replace>Activity</replace>
+      <replace>Coupon</replace>
+      <replace>coupon</replace>
+      <replace>issue_platform</replace>
+      <replace>usage_channel</replace>
+      <replace>PromotionChannelType</replace>
+      <replace>p2</replace>
+      <replace>p3</replace>
+      <replace>MenPants</replace>
+      <replace>pantSize</replace>
+    </replaceStrings>
     <dirStrings>
+      <dir>E:\code\coolshop-parent\coolshop-promotion\coolshop-promotion-service\src\main\java\com\coolshop\promotion\handler</dir>
+      <dir>E:\code\coolshop-parent\coolshop-catalog\coolshop-catalog-service\src\main\java\com\coolshop\catalog\model</dir>
       <dir>E:\code\coolshop-parent</dir>
     </dirStrings>
   </component>
@@ -163,11 +462,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/coolshop-base/pom.xml" />
-        <option value="$PROJECT_DIR$/coolshop-ucenter/pom.xml" />
-        <option value="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-api/pom.xml" />
-        <option value="$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/dao/ActivityDao.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/ActivityService.java" />
+        <option value="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/service/impl/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/mapper/BaseMapper.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/RuleService.java" />
+        <option value="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/listener/ApplicationContextListener.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/AttributeValueDao.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/AttributeNameDao.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/BundleDao.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/SkuDao.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/application-qa.yml" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/dao/CouponDao.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/CouponService.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/impl/ActivityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/impl/CouponServiceImpl.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/service/impl/RuleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/config/Swagger2Configuration.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/mapper/RuleDao.xml" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/enums/ActivityType.java" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/promotion/handler/PromotionChannelTypeHandler.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/SkuServiceTest.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/ProductServiceTest.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/ClothesProductServiceTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a552bc2b-4f8a-47a0-8108-a8952ef7adef/console_1.sql" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/AttributeNameServiceTest.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/AttributeValueServiceTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a552bc2b-4f8a-47a0-8108-a8952ef7adef/console_2.sql" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/PantsProductServiceTest.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/PantsSkuServiceTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/827fd473-f2d0-4167-ae4e-83c739defd37/console_1.sql" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/mapper/ActivityDao.xml" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/resources/mapper/CouponDao.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a552bc2b-4f8a-47a0-8108-a8952ef7adef/console_3.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a552bc2b-4f8a-47a0-8108-a8952ef7adef/console_4.sql" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/test/java/com/coolshop/ActivityServiceTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a552bc2b-4f8a-47a0-8108-a8952ef7adef/console_5.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/827fd473-f2d0-4167-ae4e-83c739defd37/console_2.sql" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/test/java/com/coolshop/CouponServiceTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/827fd473-f2d0-4167-ae4e-83c739defd37/console.sql" />
+        <option value="$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/test/java/com/coolshop/RuleServiceTest.java" />
+        <option value="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/service/BaseService.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/BrandModel.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/BundleDao.xml" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/BrandServiceTest.java" />
+        <option value="$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/BrandDao.xml" />
+        <option value="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/security/EncryptTools.java" />
+        <option value="$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/security/SaltTools.java" />
       </list>
     </option>
   </component>
@@ -185,6 +530,55 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="coolshop-base" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="coolshop-base" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="coolshop-base" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="coolshop-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="coolshop-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="coolshop-ucenter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="coolshop-ucenter-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="coolshop-ucenter-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="coolshop-ucenter-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="spring-boot" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -198,10 +592,19 @@
           <State>
             <id />
           </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Android</id>
+            <id>SpringJavaInjectionPointsAutowiringInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -225,7 +628,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,26 +646,161 @@
             <path>
               <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
               <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="coolshop-catalog-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coolshopparent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coolshop-parent" type="462c0819:PsiDirectoryNode" />
               <item name="coolshop-ucenter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.19477125" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../netty" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5386598" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/code/coolshop-parent/coolshop-base/src/main/java/com/coolshop/base/api/ApiMapping.java&#10;Data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;maven&#9;ACTION&#9;ActivateMavenProjectsToolWindow" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Amazon Redshift&#10;MySQL" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\coolshop-parent\coolshop-base\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.coolshop" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.coolshop" />
+      <recent name="com.coolshop.handler" />
+      <recent name="com.coolshop.catalog.dao" />
+      <recent name="com.coolshop.catalog.service.impl" />
+      <recent name="com.coolshop.ucenter.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\coolshop-parent\coolshop-promotion\coolshop-promotion-service\src\main\resources\mapper" />
+      <recent name="E:\code\coolshop-parent\coolshop-promotion\coolshop-promotion-service\src\main\resources" />
+      <recent name="E:\code\coolshop-parent\coolshop-catalog\coolshop-catalog-service\src\main\resources\mapper" />
+      <recent name="E:\code\coolshop-parent\coolshop-catalog\coolshop-catalog-service\src\main\resources" />
+      <recent name="E:\code\coolshop-parent\coolshop-ucenter\coolshop-ucenter-service\src\test\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -274,12 +814,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SaltTools">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="SaltTools" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.coolshop.base.tool.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.coolshop.base.tool.security.SaltTools" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="coolshop-base" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -294,6 +853,106 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="ActivityServiceTest.saveActivityAndSku" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.coolshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="coolshop-promotion-service" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.coolshop" />
+      <option name="MAIN_CLASS_NAME" value="com.coolshop.ActivityServiceTest" />
+      <option name="METHOD_NAME" value="saveActivityAndSku" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BrandServiceTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.coolshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="coolshop-catalog-service" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.coolshop" />
+      <option name="MAIN_CLASS_NAME" value="com.coolshop.BrandServiceTest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CouponServiceTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.coolshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="coolshop-promotion-service" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.coolshop" />
+      <option name="MAIN_CLASS_NAME" value="com.coolshop.CouponServiceTest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CouponServiceTest.saveCouponAndSku" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.coolshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="coolshop-promotion-service" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.coolshop" />
+      <option name="MAIN_CLASS_NAME" value="com.coolshop.CouponServiceTest" />
+      <option name="METHOD_NAME" value="saveCouponAndSku" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -321,6 +980,18 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="SpringCatalogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coolshop.SpringCatalogApplication" />
+      <module name="coolshop-catalog-service" />
+      <envs />
+    </configuration>
+    <configuration name="SpringUCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coolshop.ucenter.SpringUCenterApplication" />
+      <module name="coolshop-ucenter-service" />
+      <envs />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -355,6 +1026,29 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.SpringUCenterApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.SpringCatalogApplication" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CouponServiceTest.save" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ActivityServiceTest.saveActivityAndSku" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CouponServiceTest.saveCouponAndSku" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.BrandServiceTest.save" />
+      <item index="6" class="java.lang.String" itemvalue="Application.SaltTools" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.SaltTools" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BrandServiceTest.save" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CouponServiceTest.saveCouponAndSku" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ActivityServiceTest.saveActivityAndSku" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CouponServiceTest.save" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -373,44 +1067,162 @@
       <workItem from="1527170161013" duration="1753000" />
       <workItem from="1527210492131" duration="12575000" />
       <workItem from="1527249989288" duration="7515000" />
-      <workItem from="1527385989611" duration="399000" />
+      <workItem from="1527385989611" duration="2186000" />
+      <workItem from="1527461425783" duration="506000" />
+      <workItem from="1527462101558" duration="613000" />
+      <workItem from="1527485565387" duration="12433000" />
+      <workItem from="1527510195267" duration="10755000" />
+      <workItem from="1527570636056" duration="8887000" />
+      <workItem from="1527599549102" duration="10897000" />
+      <workItem from="1527642006349" duration="6452000" />
+      <workItem from="1527651594225" duration="7310000" />
+      <workItem from="1527669118053" duration="2796000" />
+      <workItem from="1527678493624" duration="6460000" />
+      <workItem from="1527744828716" duration="9166000" />
+      <workItem from="1527774524793" duration="11418000" />
+      <workItem from="1527817236363" duration="17097000" />
+      <workItem from="1527859280649" duration="35008000" />
+      <workItem from="1528063292252" duration="48000" />
+      <workItem from="1528588073168" duration="22000" />
+      <workItem from="1528591123746" duration="2404000" />
+      <workItem from="1528684029932" duration="1625000" />
+      <workItem from="1529242450383" duration="1396000" />
+      <workItem from="1529321493189" duration="9641000" />
+      <workItem from="1529362245788" duration="29000" />
+      <workItem from="1529388157912" duration="8140000" />
+      <workItem from="1529413089062" duration="1919000" />
+      <workItem from="1529473277421" duration="9645000" />
+      <workItem from="1529505338300" duration="4188000" />
+      <workItem from="1529733014983" duration="49541000" />
+      <workItem from="1529890451859" duration="159000" />
+      <workItem from="1529905463597" duration="7296000" />
+      <workItem from="1529928999211" duration="13157000" />
+      <workItem from="1529975667346" duration="20095000" />
+      <workItem from="1530018459223" duration="11775000" />
+      <workItem from="1530062962232" duration="25579000" />
+      <workItem from="1530101130948" duration="7278000" />
+      <workItem from="1530148052754" duration="18000" />
+      <workItem from="1530746850071" duration="117000" />
+      <workItem from="1530752546334" duration="1364000" />
+      <workItem from="1530753930811" duration="12374000" />
+      <workItem from="1530795599706" duration="8937000" />
+      <workItem from="1530839118142" duration="1206000" />
+      <workItem from="1530924307839" duration="1283000" />
+      <workItem from="1531185741610" duration="14295000" />
+      <workItem from="1531210269869" duration="2660000" />
+      <workItem from="1531229685368" duration="4809000" />
+      <workItem from="1531270782285" duration="8586000" />
+      <workItem from="1531316292070" duration="57000" />
+      <workItem from="1531357342430" duration="3389000" />
+      <workItem from="1531394928976" duration="601000" />
+      <workItem from="1531547875546" duration="9800000" />
+      <workItem from="1531612326036" duration="30791000" />
+      <workItem from="1531696654813" duration="1387000" />
+      <workItem from="1531706169944" duration="10694000" />
+      <workItem from="1531743919517" duration="68000" />
+      <workItem from="1531790071301" duration="16461000" />
+      <workItem from="1531832361400" duration="8758000" />
+      <workItem from="1531867131404" duration="3666000" />
+      <workItem from="1531877319140" duration="21375000" />
+      <workItem from="1531913934111" duration="26000" />
+      <workItem from="1531964411314" duration="11292000" />
+      <workItem from="1532002691576" duration="325000" />
+      <workItem from="1532003160403" duration="2371000" />
+      <workItem from="1532055515388" duration="1994000" />
+      <workItem from="1532086553539" duration="639000" />
+      <workItem from="1532157835241" duration="1431000" />
+      <workItem from="1532229990463" duration="62000" />
+      <workItem from="1532308635351" duration="106000" />
+      <workItem from="1537750310548" duration="629000" />
+      <workItem from="1538189499769" duration="12000" />
+      <workItem from="1538189557740" duration="2108000" />
+      <workItem from="1540795081915" duration="3490000" />
+      <workItem from="1540966723156" duration="8069000" />
+      <workItem from="1541034095457" duration="80000" />
+      <workItem from="1541034221873" duration="2243000" />
+      <workItem from="1541036850255" duration="6520000" />
+      <workItem from="1541125037096" duration="22000" />
+      <workItem from="1541175794710" duration="1239000" />
+      <workItem from="1555680176098" duration="184000" />
+      <workItem from="1555770102693" duration="981000" />
+      <workItem from="1557035407237" duration="8954000" />
+      <workItem from="1557133761904" duration="11026000" />
+      <workItem from="1557278993657" duration="7239000" />
+      <workItem from="1560134929083" duration="3052000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="BrandServiceTest_save - 2018.11.01 at 09h 27m 26s.xml">
+      <configuration name="BrandServiceTest.save" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BrandServiceTest_save - 2018.11.01 at 09h 28m 04s.xml">
+      <configuration name="BrandServiceTest.save" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BrandServiceTest_save - 2018.11.01 at 09h 30m 09s.xml">
+      <configuration name="BrandServiceTest.save" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CouponServiceTest_save - 2018.07.18 at 16h 56m 14s.xml">
+      <configuration name="CouponServiceTest.save" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CouponServiceTest_save - 2018.07.18 at 17h 02m 54s.xml">
+      <configuration name="CouponServiceTest.save" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CouponServiceTest_save - 2018.07.18 at 17h 19m 33s.xml">
+      <configuration name="CouponServiceTest.save" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CouponServiceTest_saveCouponAndSku - 2018.07.19 at 11h 18m 12s.xml">
+      <configuration name="CouponServiceTest.saveCouponAndSku" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PantsProductServiceTest_addPantProperties - 2018.07.18 at 15h 03m 50s.xml">
+      <configuration name="PantsProductServiceTest.addPantProperties" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PantsProductServiceTest_addPants - 2018.07.18 at 15h 04m 59s.xml">
+      <configuration name="PantsProductServiceTest.addPants" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PantsSkuServiceTest_savePant - 2018.07.18 at 15h 19m 43s.xml">
+      <configuration name="PantsSkuServiceTest.savePant" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22853000" />
+    <option name="totallyTimeSpent" value="575165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1799569" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4914347" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.50428265" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21359743" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45333335" sideWeight="0.49785867" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25913242" sideWeight="0.8891863" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.49785867" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34756756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14239828" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2956621" sideWeight="0.7617773" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0872591" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2522831" sideWeight="0.4614561" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18555556" sideWeight="0.91541755" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17444444" sideWeight="0.49571735" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,92 +1232,314 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/AttributeValueServiceTest.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/AttributeValueServiceTest.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/CategoryServiceTest.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/ClothesProductServiceTest.java</url>
+          <line>212</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/CategoryServiceImpl.java</url>
+          <line>189</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/ClothesProductServiceTest.java</url>
+          <line>220</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/SkuServiceImpl.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/BundleServiceImpl.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/test/java/com/coolshop/RuleServiceTest.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/service/impl/BaseServiceImpl.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/service/impl/BaseServiceImpl.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.6.RELEASE/spring-boot-1.5.6.RELEASE.jar!/org/springframework/boot/SpringApplication.class</url>
+          <line>688</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-promotion/coolshop-promotion-service/src/main/java/com/coolshop/SpringPromotionApplication.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.6.RELEASE/spring-boot-1.5.6.RELEASE.jar!/org/springframework/boot/SpringApplication.class</url>
+          <line>147</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/security/SaltTools.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/crypto/bcrypt/BCrypt.java</url>
+          <line>614</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="37" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="this.brandList" custom="com.coolshop.catalog.model.CategoryModel" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>model.getBrandList()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>machineIdProvider.getMachineId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/CategoryModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="546">
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/java/com/coolshop/ucenter/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/CategoryServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coolshop-base/pom.xml">
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/BundleModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        <state relative-caret-position="378">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/BundleDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="95" column="76" lean-forward="false" selection-start-line="95" selection-start-column="76" selection-end-line="95" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/BrandModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/service/impl/AttributeNameServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/CategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/ProductModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/model/SkuModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/ClothesProductServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/PantsSkuServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coolshop-parent.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coolshop-base/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="336">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/coolshop-ucenter/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-api/pom.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="105">
+          <caret line="86" column="1" lean-forward="false" selection-start-line="86" selection-start-column="1" selection-end-line="112" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/java/com/coolshop/ucenter/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/java/com/coolshop/ucenter/model/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-327">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/service/impl/BaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/BrandDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/SkuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/SkuDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="130" column="63" lean-forward="false" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/AttributeNameServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -513,10 +1547,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-dao/pom.xml">
+    <entry file="file://$PROJECT_DIR$/coolshop-ucenter/coolshop-ucenter-service/src/main/resources/mapper/UserDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/mapper/ProductDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="114" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="114" />
+          <folding>
+            <marker date="1530758648247" expanded="true" signature="3018:3075" ph="SELECT * FRO... coolshop_product" />
+            <marker date="1530758648247" expanded="true" signature="3152:3182" ph="SELECT * FRO... coolshop_product" />
+            <marker date="1530758648247" expanded="true" signature="3261:3298" ph="SELECT COUNT... coolshop_product" />
+            <marker date="1530758648247" expanded="true" signature="3431:3484" ph="SELECT * FRO... coolshop_product" />
+            <marker date="1530758648247" expanded="true" signature="3610:3665" ph="SELECT * FRO... coolshop_product" />
+            <marker date="1530758648247" expanded="true" signature="3772:3995" ph="SELECT * FRO... *" />
+            <marker date="1530758648247" expanded="true" signature="3790:3845" ph="SELECT * FRO... coolshop_product" />
+            <marker date="1530758648247" expanded="true" signature="4079:4379" ph="INSERT INTO coolshop_product... " />
+            <marker date="1530758648247" expanded="true" signature="5106:5201" ph="INSERT INTO coolshop_product_properties... " />
+            <marker date="1530758648247" expanded="true" signature="5287:6000" ph="UPDATE coolshop_product... " />
+            <marker date="1530758648247" expanded="true" signature="6120:6224" ph="UPDATE coolshop_product_properties... " />
+            <marker date="1530758648247" expanded="true" signature="6302:6357" ph="DELETE FROM coolshop_product... " />
+            <marker date="1530758648247" expanded="true" signature="6468:6532" ph="DELETE FROM coolshop_product_properties... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/test/resources/vesta-service.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/test/java/com/coolshop/BrandServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/generator/IdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/generator/config/IdGeneratorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/constant/APIConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="66" column="18" lean-forward="false" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/api/ApiGatewayHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/api/ApiGatewayServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/api/ApiStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ZENNI/Java/jdk1.8.0_92/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9345">
+          <caret line="508" column="0" lean-forward="false" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ZENNI/Java/jdk1.8.0_92/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24591">
+          <caret line="1222" column="0" lean-forward="false" selection-start-line="1222" selection-start-column="0" selection-end-line="1222" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ZENNI/Java/jdk1.8.0_92/src.zip!/java/security/SecureRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2772">
+          <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/security/EncryptTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/crypto/bcrypt/BCrypt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="647" column="36" lean-forward="false" selection-start-line="647" selection-start-column="36" selection-end-line="647" selection-end-column="36" />
+          <folding>
+            <element signature="e#27081#27082#0" expanded="true" />
+            <element signature="e#27134#27135#0" expanded="true" />
+            <element signature="e#27401#27402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/listener/ApplicationContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="31" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-516">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/AttributeValueDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-base/src/main/java/com/coolshop/base/tool/security/SaltTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coolshop-catalog/coolshop-catalog-service/src/main/java/com/coolshop/catalog/dao/AttributeNameDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -538,7 +1777,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -573,11 +1812,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>coolshop-parent</last-edited>
+          <last-edited>coolshop-catalog</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.19477125" />
+                <option value="0.5386598" />
                 <option value="0.6" />
               </list>
             </option>
@@ -586,10 +1825,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: org.yaml:snakeyaml:1.17</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.19477125" />
+                <option value="0.5386598" />
               </list>
             </option>
           </splitter-proportions>

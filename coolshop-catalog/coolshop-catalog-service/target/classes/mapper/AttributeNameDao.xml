@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.coolshop.catalog.dao.AttributeNameDao">
+	<resultMap id="attributeNameMap" type="AttributeNameModel">
+		<id property="id" column="attr_name_id" javaType="long" jdbcType="BIGINT"/>
+		<result property="name" column="attr_name" />
+		<result property="type" column="attr_type" />
+		<result property="fieldName" column="field_name" />
+		<result property="fieldType" column="field_type" />
+		<result property="inputType" column="input_type" />
+		<result property="required" column="required" javaType="boolean" jdbcType="TINYINT" />
+		<result property="group" column="attr_group" />
+		<result property="displayOrder" column="display_order" />
+		<result property="status" column="status" />
+		<result property="skuAttribute" column="is_sku_attr" javaType="boolean" jdbcType="TINYINT" />
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<collection property="categoryList" ofType="CategoryModel"
+					column="attr_name_id" fetchType="lazy"
+					select="com.coolshop.catalog.dao.CategoryDao.findCategoriesByAttributeNameId"/>
+	</resultMap>
+
+	<!-- 根据id查询属性名 -->
+	<select id="find" parameterType="long" resultMap="attributeNameMap">
+		SELECT * FROM coolshop_attr_name WHERE `attr_name_id` = #{id}
+	</select>
+
+	<!-- 根据所有属性名 -->
+	<select id="findAll" resultMap="attributeNameMap">
+		SELECT * FROM coolshop_attr_name
+	</select>
+
+	<!-- 统计属性名个数 -->
+	<select id="count" resultType="long">
+		SELECT COUNT(1) FROM coolshop_attr_name
+	</select>
+
+	<!--查找某一个category下的所有属性-->
+	<select id="findAttributeNamesByCategoryId" parameterType="long" resultMap="attributeNameMap">
+		SELECT * FROM
+			(SELECT * FROM coolshop_cat c WHERE c.cat_id = #{id}) cat
+		LEFT JOIN coolshop_cat_attr_name can
+		ON cat.`cat_id` = can.`cat_id`
+		LEFT JOIN coolshop_attr_name an
+		ON can.`attr_name_id` = an.`attr_name_id`
+	</select>
+
+	<!-- 添加属性 -->
+	<insert id="save" parameterType="AttributeNameModel">
+		INSERT INTO coolshop_attr_name(
+			`attr_name_id`,
+			`attr_name`,
+			`attr_type`,
+			`field_name`,
+			`field_type`,
+			`input_type`,
+			`required`,
+			`attr_group`,
+			`display_order`,
+			`status`,
+			`is_sku_attr`,
+			`create_time`)
+		VALUES (
+			#{id},#{name},#{type},#{fieldName},#{fieldType},#{inputType},#{required},#{group},
+			#{displayOrder},#{status},#{skuAttribute},#{createTime})
+	</insert>
+
+	<!-- 批量添加属性 -->
+	<insert id="saveList" parameterType="java.util.ArrayList">
+		INSERT INTO coolshop_attr_name(
+			`attr_name_id`,`attr_name`,`attr_type`,`field_name`,`field_type`,``input_type`,
+			`required`,`attr_group`,`display_order`,`status`,`is_sku_attr`,`create_time`)
+		VALUES
+			<foreach collection="list" item="element" separator=",">
+				(
+					#{element.id},
+					#{element.name},
+					#{element.type},
+					#{element.fieldName},
+					#{element.fieldType},
+					#{element.inputType},
+					#{element.required},
+					#{element.group},
+					#{element.displayOrder},
+					#{element.status},
+					#{element.skuAttribute},
+					#{element.createTime}
+				)
+			</foreach>
+	</insert>
+
+	<!-- 保存属性名和分类的关系 -->
+	<insert id="saveAttributeNameAndCategory" parameterType="java.util.Map">
+		INSERT INTO
+		coolshop_cat_attr_name(`cat_id`,`attr_name_id`,`create_time`)
+		VALUES
+		(#{categoryId},#{attributeNameId},#{createTime})
+	</insert>
+
+
+	<!-- 更新属性 -->
+	<update id="update" parameterType="AttributeNameModel">
+		UPDATE coolshop_attr_name
+		<set>
+			<if test="id != null">`attr_name_id` = #{id},</if>
+			<if test="name != null">`attr_name` = #{name},</if>
+			<if test="type != null">`attr_type` = #{type},</if>
+			<if test="fieldName != null">`field_name` = #{fieldName},</if>
+			<if test="fieldType != null">`field_type` = #{fieldType},</if>
+			<if test="inputType != null">`input_type` = #{inputType},</if>
+			<if test="required != null">`required` = #{required},</if>
+			<if test="group != null">`attr_group` = #{group},</if>
+			<if test="displayOrder != null">`display_order` = #{displayOrder},</if>
+			<if test="status != null">`status` = #{status},</if>
+			<if test="skuAttribute != null">`is_sku_attr` = #{skuAttribute},</if>
+			<if test="createTime != null">`create_time` = #{createTime}</if>
+		</set>
+		WHERE `attr_name_id` = #{id}
+	</update>
+
+	<!--更新属性名和分类信息关系-->
+	<update id="updateAttributeNameAndCategory" parameterType="java.util.Map">
+		UPDATE coolshop_cat_attr_name SET cat_id = #{categoryId} WHERE attr_name_id = #{attributeNameId}
+	</update>
+
+	<!--删除属性-->
+	<delete id="delete" parameterType="long">
+		DELETE FROM coolshop_attr_name WHERE `attr_name_id` = #{id}
+	</delete>
+
+	<!--删除属性名对应的分类关系-->
+	<delete id="deleteAttributeNameAndCategory" parameterType="long">
+		DELETE FROM coolshop_cat_attr_name WHERE `attr_name_id` = #{id}
+	</delete>
+</mapper>

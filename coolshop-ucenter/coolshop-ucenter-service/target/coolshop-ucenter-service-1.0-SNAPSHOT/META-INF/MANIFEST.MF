@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: coolshop-ucenter-service
+Implementation-Version: 1.0-SNAPSHOT
+Archiver-Version: Plexus Archiver
+Built-By: nickyzhang
+Implementation-Vendor-Id: com.ecom.coolshop
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_92
+Implementation-URL: http://projects.spring.io/spring-boot/coolshop-par
+ ent/coolshop-ucenter/coolshop-ucenter-service/
+Implementation-Vendor: Pivotal Software, Inc.
+

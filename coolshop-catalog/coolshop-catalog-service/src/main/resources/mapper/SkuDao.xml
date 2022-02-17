@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.coolshop.catalog.dao.SkuDao">
+	<resultMap id="skuMap" type="SkuModel">
+		<id property="id" column="sku_id" javaType="long" jdbcType="BIGINT"/>
+		<result property="name" column="sku_name" />
+		<result property="description" column="sku_desc" />
+		<result property="code" column="sku_code" />
+		<result property="barCode" column="bar_code" />
+		<result property="costPrice" column="cost_price" />
+		<result property="listPrice" column="market_price" />
+		<result property="salePrice" column="sale_price" />
+		<result property="displayOrder" column="display_order" />
+		<result property="status" column="sku_status" />
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<association property="product" column="product_id" select="com.coolshop.catalog.dao.ProductDao.find" />
+		<collection property="bundleList" column="sku_id" javaType="java.util.ArrayList"
+					ofType="BundleModel" select="com.coolshop.catalog.dao.BundleDao.findBundlesBySkuId"
+					fetchType="lazy">
+			<id property="id" column="bundle_id" javaType="long" jdbcType="BIGINT"/>
+			<result property="name" column="bundle_name" />
+			<result property="description" column="bundle_desc" />
+			<result property="quantity" column="quantity" />
+			<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		</collection>
+		<collection property="properties" ofType="AttributeValueModel" fetchType="lazy">
+			<id property="id" column="attr_val_id" javaType="long" jdbcType="BIGINT"/>
+			<result property="value" column="attr_val" />
+			<result property="displayOrder" column="display_order" />
+			<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+			<association property="name" column="attr_name_id" select="com.coolshop.catalog.dao.AttributeNameDao.find" />
+		</collection>
+	</resultMap>
+
+	<resultMap id="attributeValueMap" type="AttributeValueModel">
+		<id property="id" column="attr_val_id" javaType="long" jdbcType="BIGINT"/>
+		<result property="value" column="attr_val" />
+		<result property="displayOrder" column="display_order" />
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<association property="name" column="attr_name_id" select="com.coolshop.catalog.dao.AttributeNameDao.find" />
+	</resultMap>
+
+	<!--根据id查询sku信息-->
+	<select id="find" parameterType="long" resultMap="skuMap">
+		SELECT * FROM coolshop_sku WHERE `sku_id` = #{id}
+	</select>
+
+	<!--根据名字查询sku信息-->
+	<select id="findByName" resultMap="skuMap">
+		SELECT * FROM coolshop_sku WHERE `sku_name` = #{name}
+	</select>
+
+	<!-- 查询所有sku -->
+	<select id="findAll" resultMap="skuMap">
+		SELECT * FROM coolshop_sku
+	</select>
+
+	<!--根据product id查询sku信息-->
+	<select id="findSkusByProductId" parameterType="long" resultMap="skuMap">
+		SELECT * FROM coolshop_sku WHERE `product_id` = #{id}
+	</select>
+
+	<!--根据bundle id查询sku信息-->
+	<select id="findSkusByBundleId" parameterType="long" resultMap="skuMap">
+		SELECT * FROM
+			(SELECT * FROM coolshop_bundle b WHERE b.`bundle_id` = #{id}) bundle
+		LEFT JOIN  coolshop_sku_bundle sb
+		ON bundle.bundle_id = sb.bundle_id
+		LEFT JOIN coolshop_sku s
+		ON sb.sku_id = s.sku_id
+	</select>
+
+	<select id="findPropertiesBySkuId" parameterType="long" resultMap="attributeValueMap">
+		SELECT * FROM
+			(SELECT * FROM coolshop_sku WHERE sku_id = #{id}) sku
+		LEFT JOIN coolshop_sku_properties sp
+		ON sku.sku_id = sp.sku_id
+		LEFT JOIN coolshop_attr_val av
+		ON sp.attr_val_id = av.attr_val_id
+	</select>
+
+	<!--统计表里所有sku的数量-->
+	<select id="count" resultType="long">
+		SELECT COUNT(1) FROM coolshop_sku
+	</select>
+
+	<!-- 添加sku -->
+	<insert id="save" parameterType="SkuModel">
+		INSERT INTO coolshop_sku
+		(
+			`sku_id`,`sku_name`,`sku_desc`,`sku_code`,`bar_code`,
+			`cost_price`,`market_price`,`sale_price`,`display_order`,
+			`sku_status`,`create_time`,`product_id`
+		)
+		VALUES
+		(
+			#{id},#{name},#{description},#{code},#{barCode},
+			#{costPrice},#{listPrice},#{salePrice},#{displayOrder},
+			#{status},#{createTime},#{product.id}
+		)
+	</insert>
+
+	<!-- 批量添加sku -->
+	<insert id="saveList" parameterType="java.util.ArrayList">
+		INSERT INTO coolshop_sku
+		(
+			`sku_id`,`sku_name`,`sku_desc`,`sku_code`,`bar_code`,
+			`cost_price`,`market_price`,`sale_price`,`display_order`,
+			`sku_status`,`create_time`,`product_id`
+		)
+		VALUES
+		<foreach collection="list" item="element" separator=",">
+			(
+				#{element.id},
+				#{element.name},
+				#{element.description},
+				#{element.code},
+				#{element.barCode},
+				#{element.costPrice},
+				#{element.listPrice},
+				#{element.salePrice},
+				#{element.displayOrder},
+				#{element.status},
+				#{element.createTime},
+				#{element.product.id}
+			)
+		</foreach>
+	</insert>
+
+	<!-- 保存sku和bundle的关系-->
+	<insert id="saveSkuAndBundle" parameterType="java.util.Map">
+		INSERT INTO
+			coolshop_sku_bundle (`sku_id`,`bundle_id`,`create_time`)
+		VALUES
+			(#{skuId},#{bundleId},#{createTime})
+	</insert>
+
+	<!-- 更新sku -->
+	<update id="update" parameterType="SkuModel">
+		UPDATE coolshop_sku
+		<set>
+			<if test="id != null">`sku_id` = #{id},</if>
+			<if test="name != null">`sku_name` = #{name},</if>
+			<if test="description != null">`sku_desc` = #{description},</if>
+			<if test="code != null">`sku_code` = #{code},</if>
+			<if test="barCode != null">`bar_code` = #{barCode},</if>
+			<if test="costPrice != null">`cost_price` = #{costPrice},</if>
+			<if test="listPrice != null">`market_price` = #{listPrice},</if>
+			<if test="salePrice != null">`sale_price` = #{salePrice},</if>
+			<if test="displayOrder != null">`display_order` = #{displayOrder},</if>
+			<if test="status != null">`sku_status` = #{status},</if>
+			<if test="createTime != null">`create_time` = #{createTime},</if>
+			<if test="product != null">`product_id` = #{product.id}</if>
+		</set>
+		WHERE `sku_id` = #{id}
+	</update>
+
+	<!-- 保存sku和属性值之间的关系 -->
+	<insert id="saveSkuAndAttributeValue" parameterType="java.util.Map">
+		INSERT INTO coolshop_sku_properties VALUES (#{skuId},#{attributeValueId},#{createTime})
+	</insert>
+
+	<!-- 更新sku和bundle之间信息 -->
+	<update id="updateSkuAndBundle" parameterType="java.util.Map">
+		UPDATE coolshop_sku_bundle SET bundle_id = #{bundleId} WHERE sku_id = #{skuId}
+	</update>
+
+	<!-- 更新sku和属性值之间的关系 -->
+	<update id="updateSkuAndAttributeValue" parameterType="java.util.Map">
+		UPDATE coolshop_sku_properties SET attr_val_id = #{attributeValueId} WHERE sku_id = #{skuId}
+	</update>
+
+	<!--删除sku -->
+	<delete id="delete" parameterType="long">
+		DELETE FROM coolshop_sku WHERE `sku_id` = #{id}
+	</delete>
+
+	<!--删除sku和bundle关系-->
+	<delete id="deleteSkuAndBundle" parameterType="long">
+		DELETE FROM coolshop_sku_bundle WHERE `sku_id` = #{id}
+	</delete>
+
+	<!-- 删除sku和属性值之间的关系 -->
+	<delete id="deleteSkuAndAttributeValue" parameterType="long">
+		DELETE FROM coolshop_sku_properties WHERE sku_id = #{id}
+	</delete>
+</mapper>

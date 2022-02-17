@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.coolshop.promotion.dao.CouponDao">
+	<resultMap id="couponMap" type="Coupon">
+		<id property="id" column="coupon_id" javaType="long" jdbcType="BIGINT"/>
+		<result property="name" column="coupon_name" />
+		<result property="desc" column="coupon_desc" />
+		<result property="priority" column="coupon_priority" />
+		<result property="creator" column="coupon_creator" typeHandler="com.coolshop.promotion.handler.PromotionCreatorTypeHandler" />
+		<result property="platform" column="issue_platform" typeHandler="com.coolshop.promotion.handler.PromotionPlatformTypeHandler" />
+		<result property="channel" column="usage_channel" typeHandler="com.coolshop.promotion.handler.PromotionChannelTypeHandler" />
+		<result property="userScopeType" column="user_scope" typeHandler="com.coolshop.promotion.handler.UserScopeTypeHandler" />
+		<result property="type" column="coupon_type" typeHandler="com.coolshop.promotion.handler.CouponTypeHandler" />
+		<result property="issueMethod" column="issue_method" typeHandler="com.coolshop.promotion.handler.IssueMethodTypeHandler" />
+		<result property="issueNum" column="issue_num" />
+		<result property="issueFaceValue" column="issue_face_value" />
+		<result property="minSpendAmount" column="min_spend_amount" />
+		<result property="open" column="open" javaType="boolean" jdbcType="TINYINT" />
+		<result property="consumed" column="consumed" javaType="boolean" jdbcType="TINYINT" />
+		<result property="receiveNum" column="receive_num" />
+		<result property="limitReceiveNum" column="limit_receive_num" />
+		<result property="limitReceiveNumPerDay" column="limit_receive_num_per_day" />
+		<result property="issueStartTime" column="issue_start_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<result property="issueEndTime" column="issue_end_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<result property="receiveStartTime" column="receive_start_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<result property="receiveEndTime" column="receive_end_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<result property="effectiveTime" column="effective_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<result property="expiredTime" column="expired_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+		<result property="createTime" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
+	</resultMap>
+
+	<!-- 根据activity id查询activity信息 -->
+	<select id="selectOne" parameterType="long" resultMap="couponMap">
+		SELECT * FROM coolshop_coupon WHERE `coupon_id` = #{id}
+	</select>
+
+	<!-- 查询所有activity -->
+	<select id="selectAll" resultMap="couponMap">
+		SELECT * FROM coolshop_coupon
+	</select>
+
+	<!-- 统计所有优惠券数量 -->
+	<select id="count" resultType="long">
+		SELECT COUNT(1) FROM coolshop_coupon
+	</select>
+
+	<!-- 查找某一个sku所参与的优惠券 -->
+	<select id="findCouponsBySkuId" resultMap="couponMap" parameterType="long">
+		SELECT * FROM coolshop_coupon cc
+		WHERE cc.`coupon_id`
+		IN (SELECT coupon_id FROM coolshop_coupon_sku ccs WHERE ccs.sku_id = #{skuId})
+	</select>
+
+
+	<!-- 查找某一个店铺所创建的优惠券 -->
+	<select id="findCouponsByShopId" resultMap="couponMap" parameterType="long">
+		SELECT * FROM coolshop_coupon cc
+		WHERE cc.`coupon_id`
+		IN (SELECT coupon_id FROM coolshop_coupon_shop ccs WHERE ccs.shop_id = #{shopId})
+	</select>
+
+	<!-- 保存coupon信息 -->
+	<insert id="save" parameterType="Coupon">
+		INSERT INTO
+		coolshop_coupon(
+			`coupon_id`,`coupon_name`,`coupon_desc`,`coupon_priority`,`coupon_creator`,`issue_platform`,
+			`usage_channel`,`user_scope`,`coupon_type`,`issue_method`,`issue_num`,`issue_face_value`,`min_spend_amount`,
+			`open`,`consumed`,`receive_num`,`limit_receive_num`,`limit_receive_num_per_day`,`issue_start_time`,`issue_end_time`,
+			`receive_start_time`,`receive_end_time`,`effective_time`,`expired_time`,`create_time`
+		)
+		VALUES(
+			#{id},#{name},#{desc},#{priority},
+			#{creator,typeHandler=com.coolshop.promotion.handler.PromotionCreatorTypeHandler},
+			#{platform,typeHandler=com.coolshop.promotion.handler.PromotionPlatformTypeHandler},
+			#{channel,typeHandler=com.coolshop.promotion.handler.PromotionChannelTypeHandler},
+			#{userScopeType,typeHandler=com.coolshop.promotion.handler.UserScopeTypeHandler},
+			#{type,typeHandler=com.coolshop.promotion.handler.CouponTypeHandler},
+			#{issueMethod,typeHandler=com.coolshop.promotion.handler.IssueMethodTypeHandler},
+			#{issueNum},#{issueFaceValue},#{minSpendAmount},
+			#{open},#{consumed},#{receiveNum},#{limitReceiveNum},#{limitReceiveNumPerDay},#{issueStartTime},#{issueEndTime},
+			#{receiveStartTime},#{receiveEndTime},#{effectiveTime},#{expiredTime},#{createTime}
+		)
+	</insert>
+
+	<!-- 批量保存coupon信息 -->
+	<insert id="saveBatch" parameterType="java.util.ArrayList">
+		INSERT INTO
+		coolshop_coupon(
+			`coupon_id`,`coupon_name`,`coupon_desc`,`coupon_priority`,`coupon_creator`,`issue_platform`,
+			`usage_channel`,`user_scope`,`coupon_type`,`issue_method`,`issue_num`,`issue_face_value`,`min_spend_amount`,
+			`open`,`consumed`,`receive_num`,`limit_receive_num`,`limit_receive_num_per_day`,`issue_start_time`,`issue_end_time`,
+			`receive_start_time`,`receive_end_time`,`effective_time`,`expired_time`,`create_time`
+		)
+		VALUES
+		<foreach collection="list" item="element" separator=",">
+			(
+				#{element.id},#{element.name},#{element.desc},#{element.priority},
+				#{element.creator,typeHandler=com.coolshop.promotion.handler.PromotionCreatorTypeHandler},
+				#{element.platform,typeHandler=com.coolshop.promotion.handler.PromotionPlatformTypeHandler},
+				#{element.channel,typeHandler=com.coolshop.promotion.handler.PromotionChannelTypeHandler},
+				#{element.userScopeType,typeHandler=com.coolshop.promotion.handler.UserScopeTypeHandler},
+				#{element.type,typeHandler=com.coolshop.promotion.handler.CouponTypeHandler},
+				#{element.issueMethod,typeHandler=com.coolshop.promotion.handler.IssueMethodTypeHandler},
+				#{element.issueNum},#{element.issueFaceValue},#{element.minSpendAmount},
+				#{element.open},#{element.consumed},#{element.receiveNum},#{element.limitReceiveNum},#{element.limitReceiveNumPerDay},#{element.issueStartTime},#{element.issueEndTime},
+				#{element.receiveStartTime},#{element.receiveEndTime},#{element.effectiveTime},#{element.expiredTime},#{element.createTime}
+			)
+		</foreach>
+	</insert>
+
+	<!-- 保存coupon和sku的关系 -->
+	<insert id="saveCouponAndSku" parameterType="java.util.Map">
+		INSERT INTO
+		coolshop_coupon_sku(`coupon_id`,`sku_id`,`create_time`)
+		VALUES
+		(#{couponId},#{skuId},#{createTime})
+	</insert>
+
+	<!-- 保存coupon和shop的关系 -->
+	<insert id="saveCouponAndShop" parameterType="java.util.Map">
+		INSERT INTO
+		coolshop_coupon_shop(`coupon_id`,`shop_id`,`create_time`)
+		VALUES
+		(#{couponId},#{shopId},#{createTime})
+	</insert>
+
+	<!-- 更新coupon信息 -->
+	<update id="update" parameterType="Coupon">
+		UPDATE coolshop_coupon
+		<set>
+			<if test="id != null">`coupon_id` = #{id},</if>
+			<if test="name != null">`coupon_name` = #{name},</if>
+			<if test="desc != null">`coupon_desc` = #{desc},</if>
+			<if test="priority != null">`coupon_priority` = #{priority},</if>
+			<if test="creator != null">`coupon_creator` = #{creator},</if>
+			<if test="platform != null">`issue_platform` = #{platform},</if>
+			<if test="channel != null">`usage_channel` = #{channel},</if>
+			<if test="userScopeType != null">`user_scope` = #{userScopeType},</if>
+			<if test="type != null">`coupon_type` = #{type},</if>
+			<if test="issueMethod != null">`issue_method` = #{issueMethod},</if>
+			<if test="issueNum != null">`issue_num` = #{issueNum},</if>
+			<if test="issueFaceValue != null">`issue_face_value` = #{issueFaceValue},</if>
+			<if test="minSpendAmount != null">`min_spend_amount` = #{minSpendAmount},</if>
+			<if test="open != null">`open` = #{open},</if>
+			<if test="consumed != null">`consumed` = #{consumed},</if>
+			<if test="receiveNum != null">`receive_num` = #{receiveNum},</if>
+			<if test="limitReceiveNum != null">`limit_receive_num` = #{limitReceiveNum},</if>
+			<if test="limitReceiveNumPerDay != null">`limit_receive_num_per_day` = #{limitReceiveNumPerDay},</if>
+			<if test="issueStartTime != null">`issue_start_time` = #{issueStartTime},</if>
+			<if test="issueEndTime != null">`issue_end_time` = #{issueEndTime},</if>
+			<if test="receiveStartTime != null">`receive_start_time` = #{receiveStartTime},</if>
+			<if test="receiveEndTime != null">`receive_end_time` = #{receiveEndTime},</if>
+			<if test="effectiveTime != null">`effective_time` = #{effectiveTime},</if>
+			<if test="expiredTime != null">`expired_time` = #{expiredTime},</if>
+			<if test="createTime != null">`create_time` = #{createTime}</if>
+		</set>
+		WHERE `coupon_id` = #{id}
+	</update>
+
+	<!-- 更新activity信息 -->
+	<update id="updateBatchById" parameterType="Coupon">
+		<foreach collection="list" item="element" separator=",">
+			UPDATE coolshop_coupon
+			<set>
+				<if test="element.id != null">`coupon_id` = #{element.id},</if>
+				<if test="element.name != null">`coupon_name` = #{element.name},</if>
+				<if test="element.desc != null">`coupon_desc` = #{element.desc},</if>
+				<if test="element.priority != null">`coupon_priority` = #{element.priority},</if>
+				<if test="element.creator != null">`coupon_creator` = #{element.creator},</if>
+				<if test="element.platform != null">`issue_platform` = #{element.platform},</if>
+				<if test="element.channel != null">`usage_channel` = #{element.channel},</if>
+				<if test="element.userScopeType != null">`user_scope` = #{element.userScopeType},</if>
+				<if test="element.type != null">`coupon_type` = #{element.type},</if>
+				<if test="element.issueMethod != null">`issue_method` = #{element.issueMethod},</if>
+				<if test="element.issueNum != null">`issue_num` = #{element.issueNum},</if>
+				<if test="element.issueFaceValue != null">`issue_face_value` = #{element.issueFaceValue},</if>
+				<if test="element.minSpendAmount != null">`min_spend_amount` = #{element.minSpendAmount},</if>
+				<if test="element.open != null">`open` = #{element.open},</if>
+				<if test="element.consumed != null">`consumed` = #{element.consumed},</if>
+				<if test="element.receiveNum != null">`receive_num` = #{element.receiveNum},</if>
+				<if test="element.limitReceiveNum != null">`limit_receive_num` = #{element.limitReceiveNum},</if>
+				<if test="element.limitReceiveNumPerDay != null">`limit_receive_num_per_day` = #{element.limitReceiveNumPerDay},</if>
+				<if test="element.issueStartTime != null">`issue_start_time` = #{element.issueStartTime},</if>
+				<if test="element.issueEndTime != null">`issue_end_time` = #{element.issueEndTime},</if>
+				<if test="element.receiveStartTime != null">`receive_start_time` = #{element.receiveStartTime},</if>
+				<if test="element.receiveEndTime != null">`receive_end_time` = #{element.receiveEndTime},</if>
+				<if test="element.effectiveTime != null">`effective_time` = #{element.effectiveTime},</if>
+				<if test="element.expiredTime != null">`expired_time` = #{element.expiredTime},</if>
+				<if test="element.createTime != null">`create_time` = #{element.createTime}</if>
+			</set>
+			WHERE `coupon_id` = #{element.id}
+		</foreach>
+	</update>
+
+	<!-- 更新sku和coupon之间的关系 -->
+	<update id="updateCouponAndSku" parameterType="java.util.Map">
+		UPDATE coolshop_coupon_sku SET sku_id = #{skuId} WHERE coupon_id = #{couponId}
+	</update>
+
+	<!-- 更新coupon和shop之间的关系 -->
+	<update id="updateCouponAndShop" parameterType="java.util.Map">
+		UPDATE coolshop_coupon_shop SET shop_id = #{shopId} WHERE coupon_id = #{couponId}
+	</update>
+
+	<!-- 删除coupon -->
+	<delete id="deleteById" parameterType="long">
+		DELETE FROM coolshop_coupon WHERE `coupon_id` = #{id}
+	</delete>
+
+	<!-- 删除coupon -->
+	<delete id="delete" parameterType="Coupon">
+		DELETE FROM coolshop_coupon WHERE `coupon_id` = #{id}
+	</delete>
+
+	<!-- 删除所有coupon -->
+	<delete id="deleteAll">
+		DELETE FROM coolshop_coupon
+	</delete>
+
+	<!--删除coupon 和 brand 之间关系-->
+	<delete id="deleteCouponAndSku" parameterType="long">
+		DELETE FROM coolshop_coupon_sku WHERE `coupon_id` = #{id}
+	</delete>
+
+	<!--删除attribute name 和 coupon 之间关系-->
+	<delete id="deleteCouponAndShop" parameterType="long">
+		DELETE FROM coolshop_coupon_shop WHERE `coupon_id` = #{id}
+	</delete>
+</mapper>
